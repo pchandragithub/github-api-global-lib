@@ -1,3 +1,4 @@
+def call() {
 def jobName = "my-job" // replace with your job name
 def job = Jenkins.instance.getItem(jobName)
 
@@ -68,3 +69,4 @@ job.addTrigger(parameterizedTrigger)
 // Remote trigger
 def remoteTrigger = new RemoteTrigger()
 job.addTrigger(remoteTrigger)
+}
